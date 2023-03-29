@@ -1,0 +1,87 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.handler {
+  position: fixed;
+  top: 64px;
+  background: #feebea;
+  border: 1.5px solid #f42c4f;
+  border-radius: 5px;
+  padding: 24px 32px;
+  display: flex;
+  max-width: 1110px;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 5;
+
+  &Title {
+    width: 100%;
+    @include subtitleLargMobil;
+  }
+
+  &Close {
+    background: inherit;
+    border: none;
+    cursor: pointer;
+  }
+  @media (max-width: 1156px) {
+    max-width: 95% !important;
+  }
+  @media (max-width: 788px) {
+    width: 85%;
+
+    &Title {
+      @include subtitleSmall;
+    }
+  }
+  @media (max-width: 420px) {
+    width: 93%;
+    padding: 12px;
+    align-items: flex-start;
+    &Title {
+      @include subtitleSmall;
+    }
+  }
+}
+
+.seccess {
+  position: fixed;
+  top: 64px;
+  background: #ebf9f1;
+  border: 1.5px solid #00ca71;
+  border-radius: 5px;
+  padding: 24px 32px;
+  display: flex;
+  max-width: 1110px;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 5;
+
+  @media (max-width: 1156px) {
+    max-width: 95% !important;
+  }
+  @media (max-width: 788px) {
+    width: 85%;
+
+    &Title {
+      @include subtitleSmall;
+    }
+  }
+
+  @media (max-width: 420px) {
+    width: 93%;
+    padding: 12px;
+    align-items: flex-start;
+    &Title {
+      @include subtitleSmall;
+    }
+  }
+}

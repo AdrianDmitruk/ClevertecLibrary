@@ -1,0 +1,160 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 255px;
+  width: 100%;
+  padding: 8px 8px 16px 8px;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 10px;
+
+  &Img {
+    border: 1px solid $grey2;
+    border-radius: 10px;
+    width: 174px;
+    height: 242px;
+  }
+
+  &Score {
+    margin: 16px 0;
+    height: 24px;
+    width: 100%;
+    @include desktopBodySmall;
+    color: $grey2;
+  }
+  &TitleWrap {
+    height: 54px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &Title {
+    @include subtitleSmall;
+
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 3;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+  }
+
+  &AuthWrap {
+    height: 36px;
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  &Author {
+    @include desktopBodySmall;
+    color: $grey2;
+
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+  }
+  &WrapButton {
+    width: 100%;
+  }
+  &Button {
+    width: 100%;
+  }
+
+  @media (max-width: 770px) {
+    &Score {
+      margin-top: 16px;
+      margin-bottom: 25px;
+    }
+    &TitleWrap {
+      height: 36px;
+      margin-bottom: 17px;
+    }
+    &Title {
+      @include subtitleSmall;
+      -ms-line-clamp: 2;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+    }
+
+    &AuthWrap {
+      height: 18px;
+      margin-bottom: 28px;
+      overflow: hidden;
+    }
+    &Author {
+      -ms-text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -ms-line-clamp: 1;
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
+      display: -webkit-box;
+      display: box;
+      word-wrap: break-word;
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+    }
+  }
+  @media (max-width: 634px) {
+    &ScoreIcon {
+      height: 16px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    max-width: 288px;
+    padding: 8px 16px 16px 16px;
+    &Img {
+      margin: 0 auto;
+    }
+    &TitleWrap {
+      height: 43px;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    &Title {
+      @include subtitleSmall;
+      -ms-line-clamp: 3;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+    }
+
+    &AuthWrap {
+      height: 36px;
+      margin-bottom: 10px;
+    }
+
+    &Author {
+      -ms-line-clamp: 2;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+    }
+    &Button {
+      margin: 0;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

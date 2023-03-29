@@ -1,0 +1,71 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.wrap {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+
+  &Place {
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    color: $grey2;
+    @include infoLarg;
+  }
+
+  &Hint {
+    color: $grey2;
+    @include infoLarg;
+    padding: 2px 4px 2px 12px;
+  }
+
+  &HintError {
+    color: rgb(244, 44, 79);
+    @include infoLarg;
+    padding: 2px 4px 2px 12px;
+  }
+
+  &Eye {
+    position: absolute;
+    background: inherit;
+    border: none;
+    right: 16px;
+    top: 16px;
+    cursor: pointer;
+  }
+
+  &Notification {
+    height: 20px;
+  }
+
+  &Check {
+    position: absolute;
+    top: 16px;
+    right: 44px;
+  }
+
+  &AuthPassword {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    width: 100%;
+    @include infoLarg;
+  }
+
+  &AuthlinkOne {
+    color: $grey2;
+  }
+
+  &AuthlinkTwo {
+    color: $dark;
+  }
+
+  &AuthEror {
+    color: rgb(244, 44, 79);
+  }
+
+  &HintRed {
+    color: rgb(244, 44, 79);
+  }
+}

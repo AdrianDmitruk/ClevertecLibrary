@@ -1,0 +1,74 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(54, 54, 54, 0.3);
+  z-index: 999;
+  backdrop-filter: blur(10px);
+
+  &Wrap {
+    background: $white;
+    max-width: 528px;
+    width: 100%;
+    padding: 48px 56px;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &Close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    background: $grey5;
+    border: none;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &Title {
+    @include desctopH4;
+    text-align: center;
+    width: 86%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 560px) {
+    &Wrap {
+      max-width: 90%;
+      width: 100%;
+    }
+  }
+  @media (max-width: 454px) {
+    &Wrap {
+      padding: 42px 16px 32px 16px;
+    }
+    &Close {
+      top: 16px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+    }
+    &Title {
+      @include mobileH3;
+      width: 80%;
+      margin-bottom: 24px;
+    }
+  }
+}

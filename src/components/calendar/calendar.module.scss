@@ -1,0 +1,159 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.calendar {
+  width: 256px;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 8px;
+  padding-top: 9px;
+  &Header {
+    padding: 8px 16px 8px 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &HeaderLeft {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    @include bodyLargDesc;
+    color: $grey2;
+    cursor: pointer;
+  }
+
+  &HeaderLeftWrap {
+    position: relative;
+  }
+
+  &HeaderLeftTitle {
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &HeaderRight {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &HeaderArrow {
+    background: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
+  &Main {
+    padding: 0 16px;
+  }
+
+  &MainWeekNames {
+    height: 32px;
+    align-items: center;
+    display: flex;
+  }
+
+  &MainWeekList {
+    width: 32px;
+    justify-content: center;
+    display: flex;
+    @include infoLarg;
+
+    background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  &MainWeekListItem {
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &MainDays {
+    @include infoSmalll;
+    text-align: center;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  &MainDay {
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(167, 167, 167);
+  }
+
+  &MainAdditionalDay {
+    color: rgb(167, 167, 167);
+  }
+
+  &MainTodayItem {
+    color: #f83600 !important;
+  }
+
+  &MainSelectedItem {
+    background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+    color: $white !important;
+  }
+
+  &MainWeekItem {
+    background-color: $negativeBg;
+    color: $grey2;
+  }
+
+  &MainDeliv {
+    color: $dark;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid $grey3;
+    }
+  }
+
+  &MainTodayItemWeek {
+    color: #f83600 !important;
+  }
+
+  &HeaderMonth {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+      0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 8px;
+    background: $white;
+    padding: 6px;
+    @include bodyLargDesc;
+    justify-content: space-between;
+    width: 200px;
+  }
+
+  &HeaderMonthDay {
+    color: $grey2;
+    cursor: pointer;
+    width: 50px;
+  }
+
+  &HeaderMonthDayActive {
+    color: $dark;
+  }
+
+  &HeaderMonthDayList {
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &HeaderMonthDayCurrent {
+    color: #f83600;
+  }
+}

@@ -1,0 +1,23 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.wrapInput {
+  width: 100%;
+  padding: 19px 12px;
+  outline: none;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  background: $grey5;
+  border-bottom: 1px solid $grey3;
+  color: $dark;
+  @include desktopBodySmall;
+
+  &::placeholder {
+    color: $dark;
+    @include desktopBodySmall;
+  }
+
+  &Error {
+    border-bottom: 1px solid $negative;
+  }
+}

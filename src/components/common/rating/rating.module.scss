@@ -1,0 +1,39 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  &Gap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &Icon {
+    fill: $white;
+    cursor: pointer;
+  }
+  &IconSelect {
+    fill: #ffbc1f;
+    transition: fill 0.2s;
+  }
+  &IconHover {
+    fill: rgba(255, 188, 31, 0.5);
+    transition: fill 0.2s;
+  }
+  &Number {
+    @include mobileH5;
+    margin-left: 24px;
+  }
+
+  &NotRating {
+    @include desktopBodySmall;
+    margin-left: 24px;
+  }
+}

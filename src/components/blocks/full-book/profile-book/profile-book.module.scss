@@ -1,0 +1,230 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.book {
+  max-width: 1150px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  &Img {
+    width: 445px;
+    height: 594px;
+    border-radius: 10px;
+  }
+
+  &ImgWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  &ImgFirst {
+    width: 445px;
+    height: 594px;
+  }
+
+  &ImgSecond {
+    width: 445px;
+    margin-top: 17px;
+  }
+
+  &ImgSec {
+    height: 86px;
+    width: 100%;
+    border-radius: 3px;
+  }
+  &ImgSecActive {
+    height: 86px;
+    border-radius: 3px;
+    border: 1px solid #f83600;
+  }
+  &ImgTset {
+    width: 65px !important;
+  }
+  &Wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    height: 100%;
+  }
+
+  &Right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &Title {
+    @include desctopH3;
+    margin-bottom: 24px;
+  }
+  &Authr {
+    @include mobileH3;
+    color: $grey2;
+    margin-bottom: 32px;
+  }
+  &Btn {
+    padding: 14px 96px;
+    border-radius: 30px;
+    margin-bottom: 62px;
+  }
+
+  &AboutHeader {
+    @include mobileH3;
+  }
+  &AboutBorder {
+    margin: 16px 0;
+    width: 350px;
+    height: 1px;
+    background: $grey5;
+  }
+  &AboutMain {
+    @include bodyLargDesc;
+    &:last-child {
+      margin-top: 20px;
+    }
+  }
+  &AboutMobile {
+    display: none;
+  }
+  @media (max-width: 860px) {
+    &Img {
+      width: 136px;
+      height: 198px;
+    }
+    &ImgFirst {
+      width: 136px;
+      height: 198px;
+    }
+    &Wrap {
+      gap: 32px;
+    }
+    &Title {
+      @include desctopH4;
+      margin-bottom: 32px;
+    }
+    &ImgSecond {
+      display: none;
+    }
+    &Authr {
+      @include subtitleSmall;
+    }
+    &Btn {
+      padding: 14px 74px;
+      margin-bottom: 0;
+    }
+    &About {
+      display: none;
+    }
+    &AboutMobile {
+      display: block;
+      margin-top: 48px;
+    }
+    &AboutHeader {
+      @include subtitleLargMobil;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 0 64px;
+  }
+  @media (max-width: 620px) {
+    &Wrap {
+      flex-direction: column;
+    }
+    &Img {
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 432px) {
+    &Wrap {
+      gap: 16px;
+      align-items: center;
+    }
+    &Img {
+      height: 259px;
+      width: 188px;
+    }
+    &ImgWrap {
+      height: 259px;
+    }
+    &Title {
+      @include mobileH3;
+      margin-bottom: 8px;
+    }
+    &Authr {
+      @include modileBodySmall;
+      margin-bottom: 42px;
+    }
+    &Btn {
+      padding: 11px 0;
+      width: 100%;
+    }
+    &AboutMobile {
+      margin-top: 42px;
+    }
+    &AboutHeader {
+      @include mobileH5;
+    }
+    &AboutBorder {
+      margin: 8px 0;
+      width: 209px;
+    }
+    &AboutMain {
+      @include modileBodySmall;
+      &:last-child {
+        margin-top: 0;
+      }
+    }
+  }
+  @media (max-width: 432px) {
+    padding: 0 16px;
+  }
+}
+
+.swiper-scrollbar-horizontal {
+  display: none !important;
+}
+
+.bookImgSwiper {
+  span {
+    display: none;
+  }
+  @media (max-width: 860px) {
+    height: 223px;
+    :last-child {
+      bottom: 0;
+    }
+    span {
+      display: inline-block;
+    }
+  }
+  @media (max-width: 420px) {
+    height: 280px;
+  }
+}
+
+.modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &BtnWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  &Btn {
+    padding: 14px 0;
+    width: 100%;
+    @include buttonLarg;
+  }
+  @media (max-width: 454px) {
+    &BtnWrap {
+      margin-top: 24px;
+    }
+    &Btn {
+      padding: 11px 0;
+      @include buttonSmall;
+    }
+  }
+}

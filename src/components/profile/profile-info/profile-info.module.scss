@@ -1,0 +1,65 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+
+  &Form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &FormItem {
+    display: flex;
+    gap: 30px;
+  }
+
+  &FormBlock {
+    width: 50%;
+  }
+
+  &BtnWrap {
+    display: flex;
+    width: 540px;
+    gap: 30px;
+  }
+
+  &Btn {
+    width: 100%;
+    padding: 14px 0;
+    @include buttonLarg;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  @media (max-width: 670px) {
+    gap: 24px;
+
+    &FormItem {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &FormBlock {
+      width: 100%;
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+
+    &Left {
+      width: 100%;
+    }
+    &Right {
+      width: 100%;
+    }
+    &BtnWrap {
+      flex-direction: column;
+      width: 100%;
+      gap: 16px;
+    }
+  }
+}

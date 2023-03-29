@@ -1,0 +1,101 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.cover {
+  position: relative;
+  height: 218px;
+  background-color: rgb(110, 118, 241);
+  border-radius: 10px;
+
+  &Expires {
+    background: rgba(255, 82, 83, 0.7);
+    border-radius: 10px;
+  }
+
+  &Wrap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    top: 16px;
+    left: 16px;
+    z-index: 5;
+  }
+
+  &Title {
+    @include desctopH3;
+  }
+
+  &Subtitle {
+    @include subtitleLargMobil;
+    margin-top: 16px;
+  }
+
+  &FirstLayer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 218px;
+    border-radius: 10px;
+  }
+
+  &SecondLayer {
+    position: absolute;
+    height: 218px;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+  }
+
+  &FirstLayerExpires {
+    border-radius: 10px;
+    background: rgba(255, 82, 83, 0.7);
+  }
+
+  @media (max-width: 768px) {
+    height: 204px;
+
+    &Img {
+      height: 204px;
+    }
+
+    &FirstLayer {
+      height: 204px;
+    }
+
+    &SecondLayer {
+      height: 204px;
+    }
+  }
+
+  @media (max-width: 445px) {
+    height: 182px;
+
+    &Img {
+      height: 182px;
+    }
+
+    &Wrap {
+      top: 10px;
+      left: 10px;
+    }
+
+    &Title {
+      @include mobileH5;
+    }
+
+    &Subtitle {
+      @include subtitleSmall;
+      margin-top: 12px;
+    }
+
+    &FirstLayer {
+      height: 182px;
+    }
+
+    &SecondLayer {
+      height: 182px;
+    }
+  }
+}

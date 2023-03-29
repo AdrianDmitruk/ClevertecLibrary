@@ -1,0 +1,120 @@
+@mixin buttonSmall {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+@mixin buttonLarg {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+@mixin desctopH3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+}
+@mixin mobileH3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+}
+@mixin desctopH4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+}
+@mixin desctopH5 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+}
+@mixin subtitleSmall {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+}
+@mixin desktopBodySmall {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+}
+@mixin bodyLargDesc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+@mixin bodyLargMobile {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+@mixin mobileH5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+}
+@mixin identicalBox {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+@mixin modileBodySmall {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+}
+@mixin subtitleLargMobil {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+@mixin bodyLargMobil {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+@mixin infoLarg {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+}
+@mixin infoSmalll {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+}
+@mixin desctopH1 {
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 0.2px;
+}
+@mixin mobileH2 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 36px;
+}
+@mixin text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+@mixin desctopSmall {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}

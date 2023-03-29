@@ -1,0 +1,48 @@
+.spiner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: rgba(54, 54, 54, 0.3);
+
+  &Box {
+    width: 68px;
+    height: 68px;
+    display: inline-block;
+    padding: 0px;
+    border-radius: 100%;
+    border: 8px solid;
+    border-top-color: #f83600;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+    border-left-color: #f83600;
+    border-right-color: rgba(255, 255, 255, 0.3);
+    -webkit-animation: loader4 1s ease-in-out infinite;
+    animation: loader4 1s ease-in-out infinite;
+  }
+}
+@keyframes loader4 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader4 {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,116 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.info {
+  margin-top: 62px;
+
+  &Title {
+    @include mobileH5;
+  }
+  &Border {
+    width: 350px;
+    height: 1px;
+    background: $grey4;
+    margin: 16px 0;
+  }
+
+  &Content {
+    display: flex;
+    gap: 146px;
+  }
+
+  &Left {
+    display: flex;
+    gap: 70px;
+    max-width: 329px;
+    width: 100%;
+  }
+  &Right {
+    display: flex;
+    gap: 72px;
+    max-width: 635px;
+    width: 100%;
+  }
+  &WrapLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &WrapRight {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &WrapFirst {
+    @include subtitleLargMobil;
+    color: $grey2;
+  }
+  &WrapSecond {
+    @include bodyLargDesc;
+  }
+  @media (max-width: 950px) {
+    &Content {
+      gap: 50px;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 52px;
+    &Title {
+      @include subtitleLargMobil;
+    }
+    &Content {
+      gap: 30px;
+    }
+    &Border {
+      width: 305px;
+    }
+    &WrapFirst {
+      @include subtitleSmall;
+    }
+    &WrapSecond {
+      @include desktopBodySmall;
+    }
+    &Left {
+      max-width: 305px;
+      width: 100%;
+      gap: 33px;
+    }
+    &Right {
+      max-width: 305px;
+      width: 100%;
+      gap: 34px;
+    }
+  }
+  @media (max-width: 604px) {
+    margin-top: 24px;
+    &Title {
+      @include mobileH5;
+    }
+    &Border {
+      width: 209px;
+      margin: 8px 0;
+    }
+    &Content {
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+    &Left {
+      gap: 40px;
+      max-width: 100%;
+    }
+    &Right {
+      gap: 40px;
+      max-width: 100%;
+    }
+    &WrapRight {
+      width: 100%;
+    }
+    &WrapFirst {
+      @include infoLarg;
+    }
+    &WrapRight {
+      @include infoSmalll;
+    }
+  }
+}

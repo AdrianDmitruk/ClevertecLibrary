@@ -1,0 +1,51 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.navigation {
+  background: $grey5;
+  width: 100%;
+  margin-bottom: 42px;
+
+  &Wrap {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  &Container {
+    width: 100%;
+    padding: 20px;
+
+    display: inline-block;
+  }
+  &Category {
+    @include desktopBodySmall;
+    color: $grey2;
+
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-world;
+    hyphens: auto;
+  }
+  &Title {
+    @include desktopBodySmall;
+    color: $grey2;
+  }
+
+  &Chevron {
+    margin: 0 4px;
+    transform: translateY(3px);
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 48px;
+    &Container {
+      padding: 20px 64px;
+    }
+  }
+  @media (max-width: 420px) {
+    margin-bottom: 20px;
+    &Container {
+      padding: 20px 16px;
+    }
+  }
+}

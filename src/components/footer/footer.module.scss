@@ -1,0 +1,39 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.footer {
+  flex: 0 0 auto;
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $grey3;
+
+  &Copy {
+    @include bodyLargDesc;
+  }
+
+  &Social {
+    display: flex;
+    gap: 24px;
+  }
+
+  @media (max-width: 658px) {
+    flex-direction: column;
+    padding: 16px 0 8px 0;
+    &Copy {
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 480px) {
+    &Copy {
+      @include bodyLargMobile;
+    }
+  }
+  @media (max-width: 360px) {
+    &Copy {
+      width: 185px;
+    }
+  }
+}

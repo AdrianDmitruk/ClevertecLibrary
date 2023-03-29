@@ -1,0 +1,131 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.book {
+  width: 100%;
+
+  &Container {
+    max-width: 1150px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  &Rating {
+    margin-top: 42px;
+  }
+  &RatingTitle {
+    @include mobileH5;
+  }
+
+  &RatingBorder {
+    width: 350px;
+    height: 1px;
+    background: $grey4;
+    margin: 16px 0;
+  }
+  @media (max-width: 768px) {
+    &Container {
+      padding: 0 64px;
+    }
+    &Rating {
+      margin-top: 52px;
+    }
+    &RatingBorder {
+      width: 305px;
+    }
+    &RatingTitle {
+      @include subtitleLargMobil;
+    }
+  }
+  @media (max-width: 432px) {
+    &Container {
+      padding: 0 16px;
+    }
+
+    &Rating {
+      margin-top: 42px;
+    }
+    &RatingTitle {
+      @include mobileH5;
+    }
+    &RatingBorder {
+      width: 288px;
+      margin: 8px 0;
+    }
+    &Star {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
+.comment {
+  margin-top: 62px;
+  max-width: 730px;
+  width: 100%;
+  &Wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  &Title {
+    @include mobileH5;
+  }
+  &Count {
+    @include identicalBox;
+    color: $grey2;
+  }
+  &Border {
+    width: 350px;
+    height: 1px;
+    background: $grey4;
+    margin: 16px 0;
+  }
+  &Arrow {
+    background: inherit;
+    border: none;
+    cursor: pointer;
+  }
+  &ArrowIcon {
+    margin-left: 24px;
+  }
+  &ArrowIconActive {
+    margin-left: 24px;
+    transform: rotate(180deg);
+  }
+  &BorderActive {
+    display: none;
+  }
+  &Btn {
+    @include buttonLarg;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  @media (max-width: 768px) {
+    &Border {
+      width: 307px;
+    }
+  }
+  @media (max-width: 432px) {
+    &Border {
+      width: 288px;
+      margin: 8px 0;
+    }
+  }
+  &Btn {
+    padding: 14px 100px;
+    border-radius: 30px;
+    margin-top: 42px;
+  }
+  @media (max-width: 768px) {
+    &Btn {
+      width: 100%;
+      padding: 14px 0;
+    }
+  }
+  @media (max-width: 432px) {
+    &Btn {
+      margin-top: 20px;
+      padding: 11px 0;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+
+  &Title {
+    @include desctopH4;
+    margin-bottom: 8px;
+    color: $dark;
+  }
+
+  &Subtitle {
+    @include bodyLargDesc;
+    color: $grey2;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 500px) {
+    &Title {
+      @include mobileH5;
+    }
+    &Subtitle {
+      @include bodyLargMobile;
+      margin-bottom: 24px;
+    }
+  }
+}

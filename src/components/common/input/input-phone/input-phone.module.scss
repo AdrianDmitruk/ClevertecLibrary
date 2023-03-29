@@ -1,0 +1,47 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.wrap {
+  position: relative;
+  margin-bottom: 16px;
+  &Input {
+    width: 100%;
+    padding: 19px 12px;
+    outline: none;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    background: $grey5;
+    border-bottom: 1px solid $grey3;
+    color: $dark;
+    @include desktopBodySmall;
+    position: relative;
+
+    &::placeholder {
+      color: $dark;
+      @include desktopBodySmall;
+    }
+  }
+
+  &Placehold {
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    color: $grey2;
+    @include infoLarg;
+  }
+
+  &InputError {
+    border-bottom: 1px solid $negative;
+  }
+
+  &Hint {
+    color: $grey2;
+    @include infoLarg;
+    padding: 2px 4px 2px 12px;
+  }
+  &HintError {
+    color: $negative;
+    @include infoLarg;
+    padding: 2px 4px 2px 12px;
+  }
+}

@@ -1,0 +1,157 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.nav {
+  margin-right: 6px;
+  width: 279px;
+  &Ul {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    width: 279px;
+  }
+
+  &Li {
+    @include mobileH5;
+  }
+  &LinkActive {
+    background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    &::before {
+      content: '';
+      background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+      position: absolute;
+      width: 255px;
+      height: 1px;
+      top: 35px;
+    }
+  }
+  &LinkActiveSec {
+    background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include mobileH3;
+  }
+  &LinkNonActiveSec {
+    @include bodyLargDesc;
+  }
+  &ArrowWrap {
+    display: flex;
+    align-items: center;
+    gap: 82px;
+    background: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
+  &IconUp {
+    transform: rotate(180deg);
+  }
+  &IconActive {
+    fill: #f83600;
+  }
+  &IconNotActiv {
+    fill: #f83600;
+  }
+  &LiSecondTT {
+    opacity: 0;
+  }
+
+  &SecondHide {
+    opacity: 0;
+    display: none;
+  }
+  &UlSecond {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &LiSecond {
+    margin-left: 24px;
+    @include bodyLargDesc;
+    &:first-child {
+      margin-left: 20px;
+      @include mobileH5;
+    }
+  }
+  &LiSecondCount {
+    @include identicalBox;
+    color: $grey2;
+    margin-left: 6px;
+    margin-right: 4px;
+  }
+  &Footer {
+    @include mobileH5;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px 52px 32px;
+    border-top: 1px solid $grey3;
+    gap: 42px;
+  }
+  @media (max-width: 864px) {
+    width: 261px;
+    &Ul {
+      width: 261px;
+    }
+  }
+  @media (max-width: 840px) {
+    width: 232px;
+    &Ul {
+      width: 232px;
+    }
+    &LinkActive {
+      &::before {
+        content: '';
+        width: 232px;
+      }
+    }
+  }
+
+  @media (max-width: 814px) {
+    display: none;
+  }
+}
+
+.navUlMob {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  padding: 32px 32px 52px 32px;
+
+  @media (max-width: 623px) {
+    padding: 32px 16px 52px 16px;
+  }
+}
+
+.navMobile {
+  position: absolute;
+  left: 64px;
+  top: 90px;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  background: $grey5;
+  z-index: 2;
+  max-width: 502px;
+  width: 100%;
+  border-radius: 10px;
+  transition: 300ms;
+
+  @media (max-width: 814px) {
+    display: block;
+  }
+
+  @media (max-width: 623px) {
+    max-width: 288px;
+    left: 17px !important;
+    right: 0;
+    top: 76px;
+  }
+}
+
+.navFooter {
+  @media (max-width: 623px) {
+    padding: 32px 16px 52px 16px;
+  }
+}

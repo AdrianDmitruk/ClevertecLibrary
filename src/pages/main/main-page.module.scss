@@ -1,0 +1,98 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.main {
+  width: 100%;
+  &Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &FirstBlock {
+    display: flex;
+    gap: 16px;
+  }
+  &SecondBlock {
+    display: flex;
+    gap: 16px;
+  }
+  &Content {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 62px;
+    flex-wrap: wrap;
+    column-gap: 21px;
+    row-gap: 24px;
+  }
+  &ContentList {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 62px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &ContentSearch {
+    justify-content: flex-start !important;
+  }
+
+  &NotContent {
+    @include desctopH3;
+    color: $grey2;
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media (max-width: 1147px) {
+    &Content {
+      justify-content: center;
+    }
+  }
+  @media (max-width: 768px) {
+    &Content {
+      margin-top: 24px;
+      justify-content: space-between;
+      row-gap: 32px;
+    }
+    &ContentList {
+      margin-top: 24px;
+    }
+    &NotContent {
+      margin-top: 226px;
+    }
+  }
+  @media (max-width: 768px) {
+    &Content {
+      justify-content: center;
+      column-gap: 35px;
+    }
+  }
+  @media (max-width: 530px) {
+    &Content {
+      margin-top: 16px;
+    }
+    &ContentList {
+      margin-top: 16px;
+    }
+    &NotContent {
+      margin-top: 137px;
+      @include mobileH3;
+    }
+  }
+  @media (max-width: 420px) {
+    &Content {
+      justify-content: center;
+      row-gap: 16px;
+    }
+  }
+}
+.mainSecondBlockHide {
+  display: flex;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

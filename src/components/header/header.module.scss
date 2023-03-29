@@ -1,0 +1,148 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.header {
+  flex: 0 0 auto;
+  padding: 32px 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    padding: 32px 0 22px 0;
+  }
+  @media (max-width: 420px) {
+    padding: 24px 0;
+  }
+
+  &Wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &Burger {
+    display: none;
+  }
+  &BurgerClose {
+    display: none;
+  }
+  &BurgerNav {
+    display: none;
+  }
+  &BurgerNavVis {
+    display: block;
+  }
+
+  &MobileNav {
+    display: none;
+  }
+
+  &Title {
+    @include desctopH3;
+    margin-left: 120px;
+  }
+
+  &User {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+  }
+
+  &UserName {
+    @include subtitleSmall;
+    background: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
+  &UserAvatarWrap {
+    background: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
+  &UserAvatar {
+    width: 58px;
+    height: 58px;
+    filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18))
+      drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+    border-radius: 150px;
+  }
+
+  &Popup {
+    position: absolute;
+    padding: 32px 24px;
+    background: $white;
+    box-shadow: 4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    gap: 32px;
+    top: 73px;
+    z-index: 5;
+    right: 0;
+  }
+
+  &PopupNon {
+    display: none;
+  }
+
+  &ListBtn {
+    @include mobileH3;
+    background: inherit;
+    border: none;
+    cursor: pointer;
+    color: $dark;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &UserAvatar {
+    filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18))
+      drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+  }
+
+  @media (max-width: 814px) {
+    &Burger {
+      display: block;
+      border: none;
+      background: inherit;
+    }
+    &MobileNav {
+      display: block;
+      transition: 300ms;
+    }
+    &Title {
+      margin-left: 24px;
+    }
+
+    &Logo {
+      display: none;
+    }
+    &User {
+      display: none;
+    }
+  }
+  @media (max-width: 420px) {
+    &Burger {
+      width: 24px;
+      height: 24px;
+    }
+    &BurgerClose {
+      width: 24px;
+      height: 24px;
+    }
+    &Title {
+      @include mobileH3;
+    }
+  }
+}
+
+.visible {
+  display: block;
+}
+
+.notVisible {
+  display: none;
+}

@@ -1,0 +1,133 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.searchWrap {
+  position: relative;
+}
+
+.search {
+  position: relative;
+  background: inherit;
+  border: none;
+  &Icon {
+    position: absolute;
+    fill: $grey2;
+    top: 11px;
+    left: 16px;
+    cursor: pointer;
+  }
+  &IconFocus {
+    fill: #f83600;
+  }
+  &Input {
+    width: 350px;
+    padding: 10px 40px;
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+      0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 599px;
+    border: none;
+    outline: none;
+    @include desktopBodySmall;
+    color: $grey2;
+    caret-color: rgb(248, 54, 0);
+    &::placeholder {
+      @include desktopBodySmall;
+      color: $grey2;
+    }
+  }
+  &InputFocus {
+    padding-left: 16px;
+  }
+  &Clean {
+    position: absolute;
+    top: 11px;
+    right: 16px;
+    cursor: pointer;
+  }
+  @media (max-width: 934px) {
+    &Input {
+      width: 274px;
+    }
+  }
+  @media (max-width: 656px) {
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    display: flex;
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+      0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 599px;
+    &Input {
+      display: none;
+    }
+    &InputFocusMob {
+      display: block;
+      width: 100%;
+      padding: 7px 16px;
+    }
+    &InputFocusMobT {
+      display: none;
+    }
+    &Icon {
+      top: 8px;
+      left: 8px;
+    }
+    &IconNon {
+      display: none;
+    }
+    &InputFocus {
+      padding-left: 0;
+    }
+  }
+}
+.btnClean {
+  display: none;
+  @media (max-width: 656px) {
+    display: flex;
+    background: inherit;
+    border: none;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+}
+.btnCleanClear {
+  @media (max-width: 656px) {
+    display: none;
+  }
+}
+.searchFocus {
+  @media (max-width: 656px) {
+    width: 288px;
+    display: none;
+  }
+}
+.searchFocusWidth {
+  @media (max-width: 656px) {
+    width: 288px;
+  }
+}
+
+.btnMobile {
+  background: inherit;
+
+  border: none;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  display: none;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 599px;
+  &Icon {
+    fill: $grey2;
+  }
+  @media (max-width: 656px) {
+    display: flex;
+    &Not {
+      display: none;
+      width: 225px;
+    }
+  }
+}

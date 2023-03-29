@@ -1,0 +1,32 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.profile {
+  max-width: 1150px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 92px;
+
+  &Swiper {
+    height: 510px !important;
+  }
+
+  @media (max-width: 860px) {
+    &Swiper {
+      height: 510px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 64px;
+    gap: 64px;
+  }
+
+  @media (max-width: 432px) {
+    padding: 0 16px;
+    gap: 42px;
+  }
+}

@@ -1,0 +1,69 @@
+@import 'src/theme/fonts';
+@import 'src/theme/variables';
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &Header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &Title {
+    @include desctopH4;
+    color: $dark;
+  }
+
+  &Subtitle {
+    @include subtitleSmall;
+    color: $dark;
+  }
+
+  &Footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &Btn {
+    padding: 14px 0;
+    @include buttonLarg;
+  }
+
+  &Links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &Info {
+    color: $grey1;
+    @include bodyLargDesc;
+  }
+
+  &LinkAuth {
+    color: $dark;
+    @include buttonSmall;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  @media (max-width: 445px) {
+    &Btn {
+      padding: 11px 0;
+      @include buttonSmall;
+    }
+    &Links {
+      flex-direction: column;
+      gap: 4px;
+      align-items: flex-start;
+    }
+    &Info {
+      @include bodyLargMobile;
+    }
+  }
+}

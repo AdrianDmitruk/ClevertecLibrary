@@ -1,0 +1,1 @@
+export { Spiner } from './spiner';
