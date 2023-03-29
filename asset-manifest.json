@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ClevertecLibrary/static/css/main.567299fe.css",
+    "main.js": "/ClevertecLibrary/static/js/main.7b57af7b.js",
+    "static/media/avatar-big.png": "/ClevertecLibrary/static/media/avatar-big.bcd50a02b6e93194f74e.png",
+    "static/media/inst.svg": "/ClevertecLibrary/static/media/inst.bf0e437e0ca1c90fb3f7c8961e5e6541.svg",
+    "static/media/close-modal.svg": "/ClevertecLibrary/static/media/close-modal.006fc2c4251d87da8ead1ccb2fd7888c.svg",
+    "static/media/vk.svg": "/ClevertecLibrary/static/media/vk.cec79a7ecdbc915aed26c5a4ab1ff5c2.svg",
+    "static/media/burger.svg": "/ClevertecLibrary/static/media/burger.a14f07928550c21307588720eff64bd7.svg",
+    "static/media/eye-closed.svg": "/ClevertecLibrary/static/media/eye-closed.a70b2db5ea90a53c72235ff8903bb78c.svg",
+    "index.html": "/ClevertecLibrary/index.html",
+    "static/media/photo.svg": "/ClevertecLibrary/static/media/photo.436b4cb89b58dd7d0a3efa83f1d47728.svg",
+    "static/media/eye-open.svg": "/ClevertecLibrary/static/media/eye-open.f823b8f94cb096250855d2f0d4ba0a87.svg",
+    "static/media/linkedin.svg": "/ClevertecLibrary/static/media/linkedin.7e716a127ab3f8577a17f83bfefdacc9.svg",
+    "static/media/icon-arrow-down.svg": "/ClevertecLibrary/static/media/icon-arrow-down.68670f54fcde28977c54a30c042448ea.svg",
+    "static/media/icon-arrow-up.svg": "/ClevertecLibrary/static/media/icon-arrow-up.eefe3f8029437f697fb096182e1ef0f9.svg",
+    "static/media/fb.svg": "/ClevertecLibrary/static/media/fb.106e7fb630d241320112014b9985342c.svg",
+    "static/media/arrow-right.svg": "/ClevertecLibrary/static/media/arrow-right.278783190b4c103035f28aab9d63fdb0.svg",
+    "static/media/arrow-left.svg": "/ClevertecLibrary/static/media/arrow-left.613d1bd4af3772bf515dcc692d7062c7.svg",
+    "static/media/check.svg": "/ClevertecLibrary/static/media/check.06f9aa8f375b7d43f09f753b306dbc91.svg",
+    "static/media/arrow-drop-down.svg": "/ClevertecLibrary/static/media/arrow-drop-down.0a4497e6738694bc0e7b2551ff648ea1.svg",
+    "main.567299fe.css.map": "/ClevertecLibrary/static/css/main.567299fe.css.map",
+    "main.7b57af7b.js.map": "/ClevertecLibrary/static/js/main.7b57af7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.567299fe.css",
+    "static/js/main.7b57af7b.js"
+  ]
+}
